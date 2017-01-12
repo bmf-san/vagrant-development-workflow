@@ -93,7 +93,7 @@ end
 
   + `service httpd restart`ーサーバー再起動で設定を反映
   
-+ Learn More
+# Learn More
   + 各自必要なアプリケーション（php, mailcatcher, xdebug, webgrind etc...）をインストールし、開発環境を構築すること
 
 
