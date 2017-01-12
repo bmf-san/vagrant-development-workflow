@@ -1,5 +1,5 @@
-# My Vagrantfile
-This is my vagrantfile.
+# Vagrant Development Workflow
+This repository has development workflow with Vagrant.
 
 # License
 This project is licensed under the terms of the MIT license.
