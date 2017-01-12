@@ -73,7 +73,7 @@ end
 + Apacheのインストール
   + `yum install httpd`ーApacheのインストール
   + `service httpd start`ーサーバー起動
-  + `chckconfig httpd on`ーログイン時自動起動設定
+  + `chkconfig httpd on`ーログイン時自動起動設定
 
 + Apacheの設定
   + `cd /etc/httpd/conf.d`
@@ -94,6 +94,6 @@ end
   + `service httpd restart`ーサーバー再起動で設定を反映
   
 + Learn More
-  + 各種必要なアプリケーション（php, mailcatcher, xdebug, webgrind etc...）をインストールし、開発環境を構築すること
+  + 各自必要なアプリケーション（php, mailcatcher, xdebug, webgrind etc...）をインストールし、開発環境を構築すること
 
 
