@@ -6,6 +6,11 @@ Vagrant.configure(2) do |config|
   
   # Network
   config.vm.network "private_network", ip: "192.168.33.10"
+
+  # Time Setting
+  config.vm.provider :virtualbox do |vb|
+        vb.customize ["setextradata", :id, "VBoxInternal/Devices/VMMDev/0/Config/GetHostTimeDisabled", 0]
+  end
   
   # Synced Folder
   config.vm.synced_folder "/path/to/directory", "/var/www/html",
