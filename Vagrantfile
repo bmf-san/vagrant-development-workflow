@@ -22,6 +22,11 @@ Vagrant.configure(2) do |config|
   config.vm.provider "virtualbox" do |vb|
         vb.customize ["modifyvm", :id, "--paravirtprovider", "kvm"]
   end
+
+  # Memory
+  config.vm.provider "virtualbox" do |vm|
+    vm.memory = 1024
+  end
   
   # Host Updater
   config.vm.network :private_network, ip: "192.168.33.10"
