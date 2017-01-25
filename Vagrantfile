@@ -4,9 +4,6 @@ Vagrant.configure(2) do |config|
   # Box Name
   config.vm.box = "centos6.7"
   
-  # Network
-  config.vm.network "private_network", ip: "192.168.33.10"
-
   # Time Setting
   config.vm.provider :virtualbox do |vb|
         vb.customize ["setextradata", :id, "VBoxInternal/Devices/VMMDev/0/Config/GetHostTimeDisabled", 0]
@@ -28,7 +25,7 @@ Vagrant.configure(2) do |config|
     vm.memory = 1024
   end
   
-  # Host Updater
+  # Network - Host Updater
   config.vm.network :private_network, ip: "192.168.33.10"
   config.vm.hostname = "localdev" 
   config.hostsupdater.aliases = ["localdev-hoge"]
